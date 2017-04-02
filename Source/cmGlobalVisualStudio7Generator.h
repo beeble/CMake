@@ -122,6 +122,7 @@ protected:
                                    cmGeneratorTarget const* t) = 0;
   virtual void WriteProjectConfigurations(
     std::ostream& fout, const std::string& name, cmStateEnums::TargetType type,
+    cmGeneratorTarget const& target,
     std::vector<std::string> const& configs,
     const std::set<std::string>& configsPartOfDefaultBuild,
     const std::string& platformMapping = "") = 0;
